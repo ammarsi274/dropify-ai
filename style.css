@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #e7e7e7, #dbdbdb, #c3c5c5);
+    font-family: Arial, sans-serif;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    /* background-color: #fff; */
+}
+
+#gray-div,
+#black-div {
+    /* position: absolute; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    height: 50%;
+    
+}
+
+#gray-div {
+    background: linear-gradient(to right, #e7e7e7, #dbdbdb, #c3c5c5);
+    width: 100vw;
+}
+
+#black-div {
+    background: linear-gradient(to right, #e7e7e7, #dbdbdb);
+    width: 50vw; /* Set the width to 50% of the viewport width */
+}
+
+#top-sect {
+    /* background: linear-gradient(to right, #e7e7e7, #dbdbdb, #c3c5c5); */
+    /* color: black; */
+    /* padding: 32px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: start;
+    height: 50vh;
+    width: 100vw;
+}
+#navbar {
+    background: linear-gradient(to right, #e7e7e7, #dbdbdb, #c3c5c5);
+    color: black;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 95vw;
+}
+
+#navtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+    border: 10px solid #965ec6; /* Set the border width and color */
+    background-color: transparent;
+}
+
+#navbar-title {
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
+#navbar-options {
+    display: flex;
+}
+
+.navbar-option {
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+#cta-button {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#secondary-button {
+    background-color: transparent;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.rect {
+    position: relative;
+    overflow: hidden;
+    /* background-color: red; */
+    background: linear-gradient(to right, #e7e7e7, #d2d4d4);
+    height: 50%;
+    width: 70vw;
+}
+.rect2 {
+    /* background-color: blue; */
+    height: 40%;
+    width: 70vw;
+    /* overflow: hidden; */
+}
+
+span {
+    
+    position: relative;
+    animation: slideIn 0.5s forwards ; */
+   
+    transform: translateY(0px);
+    transition: opacity 0.5s, transform 0.5s;
+    animation: fadeInUp 0.6s ease-out 1s forwards; 
+}
+
+.animated-text, #animated-text2 {
+   
+  
+    font-size: 56px;
+    font-weight: 600;
+    padding: 0 32px;
+    
+  }
+  
+.animated-text{
+    animation: slideIn 2s forwards;
+    
+}
+#animated-text2{
+    display: block; */
+color: #f14311;
+    animation: slideIn2 1.7s forwards;
+}
+
+  @keyframes slideIn {
+    to {
+     
+      transform: translateY(20%);
+    }
+    from {
+     
+      transform: translateY(200%);
+    }
+  }
+  @keyframes slideIn2 {
+    to {
+     
+      transform: translateY(-50%);
+    }
+    from {
+     
+      transform: translateY(30%);
+    }
+  }
+
+
+#card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 160px;
+    border: 1px solid #ccc;
+    box-shadow: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha channel for transparency */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    animation: fadeInUp 0.6s ease-out 1s forwards;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    color: #555;
+}
+
+.card-button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

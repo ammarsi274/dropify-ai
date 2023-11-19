@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Dropify AI</title>
+  </head>
+  <body>
+    <video id="video-background" autoplay muted onended="switchVideo()">
+      <!-- Initial video source -->
+      <source
+        id="initial-source"
+        src="assets/your-video.mp4"
+        type="video/mp4"
+      />
+      <source
+        id="initial-source-webm"
+        src="assets/your-video.webm"
+        type="video/webm"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <div id="content">
+      <!-- <div id="gray-div"> -->
+      <!-- Content for the gray div -->
+      <!-- <h1>Gray Div</h1> -->
+      <!-- <p>This is the gray div content.</p> -->
+      <!-- </div> -->
+      <!-- <div id="black-div"> -->
+      <!-- Content for the black div -->
+      <!-- <h1>Black Div</h1> -->
+      <!-- <p>This is the black div content.</p> -->
+      <!-- </div> -->
+      <div id="top-sect">
+      <div id="navbar">
+        <div id="navtitle">
+          <div id="logo">
+            </div>
+          <div id="navbar-title">
+            Dropify</div>
+          </div>
+        
+
+        <div id="navbar-options">
+          <a href="#" class="navbar-option">Home</a>
+          <a href="#" class="navbar-option">About</a>
+          <a href="#" class="navbar-option">Products</a>
+          <a href="#" class="navbar-option">Contact</a>
+        </div>
+        <div id="buttons">
+        <button id="secondary-button">Log In</button>
+        <button id="cta-button">Order Delivery</button>
+      </div>
+      </div>
+      <div class="rect">
+        <div class="animated-text">Fast, reliable &</div>
+      </div>
+      <div class="rect2">
+        <div id="animated-text2">Fast, reliable &</div>
+      </div>
+    </div>
+      <div id="card-container">
+        <div class="card">
+            <div class="card-title">Card 1</div>
+            <div class="card-content">
+                This is the content of card 1. Add any relevant details here.
+            </div>
+            <button class="card-button">Learn More</button>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Card 2</div>
+            <div class="card-content">
+                This is the content of card 2. Add any relevant details here.
+            </div>
+            <button class="card-button">Learn More</button>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Card 3</div>
+            <div class="card-content">
+                This is the content of card 3. Add any relevant details here.
+            </div>
+            <button class="card-button">Learn More</button>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
