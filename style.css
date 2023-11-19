@@ -2,7 +2,7 @@ body {
     margin: 0;
     overflow: hidden;
     background: linear-gradient(to right, #e7e7e7, #dbdbdb, #c3c5c5);
-    font-family: Arial, sans-serif;
+    font-family: Inter, sans-serif;
 }
 
 #video-background {
@@ -59,13 +59,13 @@ body {
     flex-direction: column;
     /* justify-content: space-between; */
     align-items: start;
-    height: 50vh;
+    height: 60vh;
     width: 100vw;
 }
 #navbar {
     background: linear-gradient(to right, #e7e7e7, #dbdbdb, #c3c5c5);
     color: black;
-    padding: 32px;
+    padding:32px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,15 +80,15 @@ body {
 }
 
 #logo{
-    height: 24px;
-    width: 24px;
+    height: 16px;
+    width: 16px;
     border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
-    border: 10px solid #965ec6; /* Set the border width and color */
+    border: 8px solid #965ec6; /* Set the border width and color */
     background-color: transparent;
 }
 
 #navbar-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 0 10px;
 }
 
@@ -100,18 +100,19 @@ body {
     margin-right: 15px;
     color: black;
     text-decoration: none;
+    font-size: 13px;
 }
 
 #cta-button {
     background-color: white;
     color: black;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
 }
 
-#secondary-button {
+#tertiary-button {
     background-color: transparent;
     color: black;
     padding: 10px 15px;
@@ -125,9 +126,53 @@ body {
     overflow: hidden;
     /* background-color: red; */
     background: linear-gradient(to right, #e7e7e7, #d2d4d4);
-    height: 50%;
+    height: 40%;
     width: 70vw;
+    display: flex;
+    flex-direction: row;
 }
+
+.fd{
+    align-items: start;
+    /* margin-top: -40px; */
+}
+.first-deliv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: -40px; */
+}
+
+.fd_icon{
+    height: 48px;
+    width: 48px;
+    border-radius: 20%; /* Make it a circle by setting border-radius to 50% */
+    border: 1px solid #ffffff; /* Set the border width and color */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.right-action {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+   /* Set the border width and color */
+    background-color: white;
+    margin-left: -12px;
+    margin-right: 12px;
+    z-index: 2;
+    text-align: center;
+    
+
+}
+
+.ar{
+    position: absolute;
+    margin-left: -6.5px;
+    margin-top: 2.5px;
+    font-size: 14px;
+}
+
 .rect2 {
     /* background-color: blue; */
     height: 40%;
@@ -137,31 +182,43 @@ body {
 
 span {
     
-    position: relative;
-    animation: slideIn 0.5s forwards ; */
+    /* position: relative; */
+    /* animation: slideIn 0.5s forwards ; */ */
    
-    transform: translateY(0px);
-    transition: opacity 0.5s, transform 0.5s;
-    animation: fadeInUp 0.6s ease-out 1s forwards; 
+    /* transform: translateY(0px); */
+    /* transition: opacity 0.5s, transform 0.5s; */
+    /* animation: fadeInUp 0.6s ease-out 1s forwards;  */
 }
 
 .animated-text, #animated-text2 {
    
   
-    font-size: 56px;
-    font-weight: 600;
+    font-size: 74px;
+    font-weight: 500;
     padding: 0 32px;
+    
     
   }
   
 .animated-text{
     animation: slideIn 2s forwards;
+    margin-top: -44px;
     
 }
 #animated-text2{
-    display: block; */
-color: #f14311;
-    animation: slideIn2 1.7s forwards;
+    display: block; 
+    opacity: 0;
+    margin-top: -36px;
+
+    animation: slideIn2 2s forwards 1s;
+}
+#animated-text3{
+    display: block; 
+    opacity: 0;
+    padding: 0 35px;
+    animation: slideIn3 1.5s forwards 0.5s;
+    margin-top: -28px;
+    /* margin-bottom: 16px; */
 }
 
   @keyframes slideIn {
@@ -176,14 +233,44 @@ color: #f14311;
   }
   @keyframes slideIn2 {
     to {
-     
+     opacity: 1;
       transform: translateY(-50%);
     }
     from {
-     
+     opacity: 0;
       transform: translateY(30%);
     }
   }
+  @keyframes slideIn3 {
+    to {
+     opacity: 1;
+      transform: translateX(0);
+    }
+    from {
+     opacity: 0;
+      transform: translateX(-20%);
+    }
+  }
+
+
+#buttons2{
+    /* position: relative; */
+    /* background-color: green; */
+    margin-left: 32px;
+    margin-top: 28px;
+
+}
+
+#secondary-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
 
 
 #card-container {
